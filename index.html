@@ -1,1 +1,124 @@
-Hello World
+<html>
+<body style="margin:0%">
+<ul id="bar">
+    <li><a href="#name" style="color:white">Name</a></li>
+    <li><a href="#projectListHR" style="color:white">Project List</a></li>
+    <li><a href="#contactHR"style="color:white">Contact</a></li>
+</ul>
+<div id="head">
+<h2 id="name">Donglin Zhang</h2>
+<div style="text-align: center">
+    <img id="picture" src="pic.png" alt="Picture" width="20%">
+</div>
+<p id="info">Student in Computer Science</p>
+
+
+<HR id="projectListHR"style="border:3 double #987cb9" width="80%" color=#987cb9 SIZE=3/>
+<h3 id="projectList">Project List</h3>
+
+<table>
+    <tr>
+        <th>Project 1</th>
+        <th class="secondColumn">Project 2</th>
+    </tr>
+    <tr>
+        <td>Detail about project 1</td>
+        <td class="secondColumn">Detail about project 2</td>
+    </tr>
+</table>
+
+<HR id="contactHR" style="border:3 double #987cb9" width="80%" color=#987cb9 SIZE=3/>
+<div id="contact">
+    <h3>Contact</h3>
+    <div id="iconList">
+        <a href="https://www.facebook.com">facebook</a>
+        <a href="https://www.twitter.com">twitter</a>
+    </div>
+</div>
+<HR align=center width="80%" color=#987cb9 SIZE=1/>
+<p style="text-align: center">Copyright&nbsp;&copy;&nbsp;Donglin Zhang</p>
+</body>
+</html>
+
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height:20px;
+    }
+
+    li {
+        float: left;
+        font-size: 15px;
+
+    }
+    
+    h3{
+        text-align: center;
+    }
+    div#head{
+
+        margin-top: 40px;
+        margin-left:30px;
+        margin-right: 30px;
+    }
+    h2 {
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+    p#info{
+        padding-left:50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+
+	
+    table{
+        margin:0 auto;
+        width:80%;
+		border-collapse: collapse;
+		border: 0px solid #999999;    
+	}
+
+    table tr th{
+        border-right:1px solid #000000
+    } 
+    table tr td { 
+        border-top:1px solid #000000; 
+        border-right:1px solid #000000;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    table tr th.secondColumn{
+        border-right:0px
+    }
+    table tr td.secondColumn{
+        border-right:0px
+    }
+
+    hr{
+        margin-bottom:20px;
+    }
+    a{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+    #secondColumn{
+        border:0px;
+    }
+    #iconList{
+        display: flex;
+        justify-content: center;
+    }
+</style>
